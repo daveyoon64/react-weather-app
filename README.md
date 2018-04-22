@@ -1,6 +1,6 @@
 # React Weather App
 <p align="center">
-  <img src="https://github.com/daveyoon64/react-weather-app/blob/master/weather_app.gif" width="300">
+  <img src="https://github.com/daveyoon64/react-weather-app/blob/master/weather_app.gif" width="600">
 </p>
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
