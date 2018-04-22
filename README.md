@@ -21,11 +21,13 @@ npm version 4.3+
 3. npm start
 
 ## Next Steps
-| 1. Limit input to 30 characters |
-| 2. Input: Deal with 404 Error |
-| 3. Deal with no city input |
-| 4. Deal with no country input |
-| 5. Localize states as much as possible |
+| Type | Issue to Fix |
+| --- | --- |
+| Input | 1. Limit input to 30 characters |
+| Input | 2. Input: Deal with 404 Error |
+| Input | 3. Deal with no city input |
+| Input | 4. Deal with no country input |
+| Infrastructure | 5. Localize states as much as possible |
 
 ## About this Project
 This project is based on the tutorials by [Hamza Mirza](https://www.youtube.com/channel/UCBV-JvG9Ubkj7AU6Cxls1Tw) and then extended to learn more about React and frontend programming.
