@@ -5,7 +5,6 @@ import Weather from "./components/Weather.js";
 
 const API_KEY = "9861185ad1f543a0117d43563f4bfbe1"
 
-
 class App extends React.Component {
   state = {
     temperature: undefined,
@@ -16,21 +15,13 @@ class App extends React.Component {
     error: undefined 
   }
   getWeather = async (e) => {
-    // the async (e) and e.preventDefault() prevents a full page refresh
-    // e is an event triggered by all events in HTML
-    // prevent what actually happens
     e.preventDefault();
-    
     // get values of the form from Form.js
     const city = e.target.elements.city.value;
     const country = e.target.elements.country.value;
-
-    // This function needs to be connected via props in the render() function
-    // like this <Form getWeather={this.getWeather}/>
     // call to api
     const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
-    // convert to JSON format
-    const data = await api_call.json();
+    const data = await api_call.json(); // convert to JSON format
     if (city && country)
     {
       console.log(data)
@@ -51,12 +42,10 @@ class App extends React.Component {
         description: undefined,
         error: "Please enter a value"
       });
-    }
-    
+    }  
   } // arrow => binds this to component with no constructor
   render() {
     return (
-      // you can only return one single div (parent element) to jsx
       <div>
         <div className="wrapper">
           <div className="main">
@@ -80,12 +69,8 @@ class App extends React.Component {
           </div>
         </div>
       </div>
-      // jsx will hand off to Babel to convert to JS
     );
   }
 };
-
-
-        
 
 export default App; // this is so index.js can see the app
