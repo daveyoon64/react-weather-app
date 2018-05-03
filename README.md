@@ -3,10 +3,14 @@
   <img src="https://github.com/daveyoon64/react-weather-app/blob/master/weather_app.gif" width="600">
 </p>
 
-=======
 This app takes city and country input from the user, calls the OpenWeather API, and then 
 renders the information for the user. This app will become more useful as I learn more 
 about what React v16 can do.
+
+## Todo List for Weather App
+1. City validation
+2. Country Validation
+3. Localize the states
 
 ## Tools and Frameworks Used
 Visual Code
